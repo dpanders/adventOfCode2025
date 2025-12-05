@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug AoC (LLDB)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/aoc",
+      "args": ["1"],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "MIMode": "lldb",
+      "externalConsole": false,
+      "environment": [],
+      "preLaunchTask": "Build"
+    }
+  ]
+}
