@@ -152,6 +152,19 @@ test_safe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/build
 .PHONY : test_safe/fast
 
+#=============================================================================
+# Target rules for targets named test_invalidCheck
+
+# Build rule for target.
+test_invalidCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_invalidCheck
+.PHONY : test_invalidCheck
+
+# fast build rule for target.
+test_invalidCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/build
+.PHONY : test_invalidCheck/fast
+
 src/aoc.o: src/aoc.cpp.o
 .PHONY : src/aoc.o
 
@@ -159,6 +172,7 @@ src/aoc.o: src/aoc.cpp.o
 src/aoc.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.o
 .PHONY : src/aoc.cpp.o
 
 src/aoc.i: src/aoc.cpp.i
@@ -168,6 +182,7 @@ src/aoc.i: src/aoc.cpp.i
 src/aoc.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.i
 .PHONY : src/aoc.cpp.i
 
 src/aoc.s: src/aoc.cpp.s
@@ -177,6 +192,7 @@ src/aoc.s: src/aoc.cpp.s
 src/aoc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.s
 .PHONY : src/aoc.cpp.s
 
 src/day01.o: src/day01.cpp.o
@@ -206,6 +222,30 @@ src/day01.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/day01.cpp.s
 .PHONY : src/day01.cpp.s
 
+src/day02.o: src/day02.cpp.o
+.PHONY : src/day02.o
+
+# target to build an object file
+src/day02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day02.cpp.o
+.PHONY : src/day02.cpp.o
+
+src/day02.i: src/day02.cpp.i
+.PHONY : src/day02.i
+
+# target to preprocess a source file
+src/day02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day02.cpp.i
+.PHONY : src/day02.cpp.i
+
+src/day02.s: src/day02.cpp.s
+.PHONY : src/day02.s
+
+# target to generate assembly for a file
+src/day02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day02.cpp.s
+.PHONY : src/day02.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -229,6 +269,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/test_invalidCheck.o: tests/test_invalidCheck.cpp.o
+.PHONY : tests/test_invalidCheck.o
+
+# target to build an object file
+tests/test_invalidCheck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/tests/test_invalidCheck.cpp.o
+.PHONY : tests/test_invalidCheck.cpp.o
+
+tests/test_invalidCheck.i: tests/test_invalidCheck.cpp.i
+.PHONY : tests/test_invalidCheck.i
+
+# target to preprocess a source file
+tests/test_invalidCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/tests/test_invalidCheck.cpp.i
+.PHONY : tests/test_invalidCheck.cpp.i
+
+tests/test_invalidCheck.s: tests/test_invalidCheck.cpp.s
+.PHONY : tests/test_invalidCheck.s
+
+# target to generate assembly for a file
+tests/test_invalidCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/tests/test_invalidCheck.cpp.s
+.PHONY : tests/test_invalidCheck.cpp.s
 
 tests/test_safe.o: tests/test_safe.cpp.o
 .PHONY : tests/test_safe.o
@@ -264,6 +328,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... aoc"
+	@echo "... test_invalidCheck"
 	@echo "... test_safe"
 	@echo "... src/aoc.o"
 	@echo "... src/aoc.i"
@@ -271,9 +336,15 @@ help:
 	@echo "... src/day01.o"
 	@echo "... src/day01.i"
 	@echo "... src/day01.s"
+	@echo "... src/day02.o"
+	@echo "... src/day02.i"
+	@echo "... src/day02.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test_invalidCheck.o"
+	@echo "... tests/test_invalidCheck.i"
+	@echo "... tests/test_invalidCheck.s"
 	@echo "... tests/test_safe.o"
 	@echo "... tests/test_safe.i"
 	@echo "... tests/test_safe.s"

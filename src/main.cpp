@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 
     switch (day) {
         case 1: return day01();
+        case 2: return day02();
         default:
             std::cerr << "Day " << day << " not implemented.\n";
             return 1;

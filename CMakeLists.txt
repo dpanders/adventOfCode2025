@@ -24,3 +24,8 @@ add_executable(test_safe tests/test_safe.cpp src/day01.cpp src/aoc.cpp)
 target_include_directories(test_safe PRIVATE include)
 target_link_libraries(test_safe GTest::GTest GTest::Main)
 add_test(NAME SafeTests COMMAND test_safe)
+
+add_executable(test_invalidCheck tests/test_invalidCheck.cpp src/aoc.cpp)
+target_include_directories(test_invalidCheck PRIVATE include)
+target_link_libraries(test_invalidCheck GTest::GTest GTest::Main)
+add_test(NAME InvalidCheckTests COMMAND test_invalidCheck)
