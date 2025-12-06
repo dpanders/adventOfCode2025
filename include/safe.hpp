@@ -15,26 +15,24 @@ public:
     safe(int initial) : value(initial) {}
 
     void turnLeft(int amount) {
-        int old_value = value;
-        if (value == 0){
-            old_value+=100;
+        for(int i = 0; i < amount; i++) {
+            value--;
+            normalize();
+            if (value == 0) {
+                zeroes_count++;
+            }
         }
-        value = value - amount;
-        if (amount < old_value)
-        {
-            // do nothing
-        }
-        else
-        {
-            zeroes_count += abs(value / 100) +1;
-        }normalize();
     }
 
     void turnRight(int amount) {
-        value = value + amount;
-        zeroes_count += value / 100;
-        normalize();
-    }    
+        for(int i = 0; i < amount; i++) {
+            value++;
+            normalize();
+            if (value == 0) {
+                zeroes_count++;
+            }
+        }
+    }
     
     int current() const {
         return value;
