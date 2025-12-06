@@ -3,7 +3,7 @@
 
 class safe {
 private:
-    int value;
+    int value, zeroes_count = 0;
 
     void normalize() {
         // Keep value between 0-99
@@ -15,29 +15,38 @@ public:
     safe(int initial) : value(initial) {}
 
     void turnLeft(int amount) {
+        int old_value = value;
+        if (value == 0){
+            old_value+=100;
+        }
         value = value - amount;
-        normalize();
+        if (amount < old_value)
+        {
+            // do nothing
+        }
+        else
+        {
+            zeroes_count += abs(value / 100) +1;
+        }normalize();
     }
 
     void turnRight(int amount) {
         value = value + amount;
+        zeroes_count += value / 100;
         normalize();
-    }    int current() const {
+    }    
+    
+    int current() const {
         return value;
     }
 
     int zeroes() const {
-        // Count the number of zeroes in the current value
-        int count = 0;
-        int temp = value;
-        
-        if (temp == 0) return 1;
-        
-        while (temp > 0) {
-            if (temp % 10 == 0) count++;
-            temp /= 10;
-        }
-        return count;
+        return zeroes_count;
+    }
+
+    void reset(int initial) {
+        value = initial;
+        zeroes_count = 0;
     }
 
 };
