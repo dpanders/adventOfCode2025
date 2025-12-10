@@ -43,28 +43,19 @@ bool checkRepetitions(const std::string& str, int factor, int blockSize) {
    for (int i=0; i<blockSize; i++)
    {
       std::vector<int> values;
-      // std::cout << "\t" << i;
       for (int j=0; j<factor; j++)
       {
          // put all values into a vector
-         // std::cout << "\t" << j;
          values.push_back(str[j*blockSize+i]);
       }
-      // std::cout << "\n check: ";
-      // for (char value : values)
-      // {
-      //    std::cout << value<<" ";
-      // }
-      // std::cout << "\t\t";
-     
       // check those are all the same
       if(!checkAllSame(values))
       {
+         // if there are any differences in the values, return false
          return(false);
-         // std::cout << "not same\n";
       }
    }
-   // std::cout << "same\n";
+   // if we've made it here, this combination has a repeating sequence
    return (true);
 }
 // Part 2 version of invalidCheck
@@ -75,10 +66,8 @@ bool invalidCheckPt2(long long value) {
 // bin the groups into # of factors of block size
 // 123123
 // ex. factors 3, 2, block size 2, 3
-   // std::cout << value;
    for (int factor : factors) {
       int blockSize = str.length() / factor;
-      // std::cout << "\t" << "factor: " << factor << "\t" << "blockSize: " << blockSize << "\n";
       if (checkRepetitions(str, factor, blockSize)) {
          return true;
       }

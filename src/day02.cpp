@@ -28,12 +28,10 @@ int day02() {
             // TODO: Use value1 and value2 here
             // std::cout << value1 << "-" << value2 << "\n";
             for (long long v = value1; v <= value2; v++) {
-                // check if invalid
-               //  if (invalidCheck(v)){
-               //      invalid += v;
-               //  }
+                if (invalidCheck(v)){
+                    invalid += v;
+                }
                 if (invalidCheckPt2(v)) {
-                  // std::cout << v << "\n";
                     invalidPt2 += v;
                 }
             }
