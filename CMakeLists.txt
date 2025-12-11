@@ -29,3 +29,8 @@ add_executable(test_invalidCheck tests/test_invalidCheck.cpp src/aoc.cpp)
 target_include_directories(test_invalidCheck PRIVATE include)
 target_link_libraries(test_invalidCheck GTest::GTest GTest::Main)
 add_test(NAME InvalidCheckTests COMMAND test_invalidCheck)
+
+add_executable(test_joltage tests/test_joltage.cpp src/aoc.cpp)
+target_include_directories(test_joltage PRIVATE include)
+target_link_libraries(test_joltage GTest::GTest GTest::Main)
+add_test(NAME JoltageTests COMMAND test_joltage)

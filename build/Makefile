@@ -165,6 +165,19 @@ test_invalidCheck/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/build
 .PHONY : test_invalidCheck/fast
 
+#=============================================================================
+# Target rules for targets named test_joltage
+
+# Build rule for target.
+test_joltage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_joltage
+.PHONY : test_joltage
+
+# fast build rule for target.
+test_joltage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/build
+.PHONY : test_joltage/fast
+
 src/aoc.o: src/aoc.cpp.o
 .PHONY : src/aoc.o
 
@@ -173,6 +186,7 @@ src/aoc.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.o
 .PHONY : src/aoc.cpp.o
 
 src/aoc.i: src/aoc.cpp.i
@@ -183,6 +197,7 @@ src/aoc.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.i
 .PHONY : src/aoc.cpp.i
 
 src/aoc.s: src/aoc.cpp.s
@@ -193,6 +208,7 @@ src/aoc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/aoc.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/src/aoc.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.s
 .PHONY : src/aoc.cpp.s
 
 src/day01.o: src/day01.cpp.o
@@ -246,6 +262,30 @@ src/day02.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day02.cpp.s
 .PHONY : src/day02.cpp.s
 
+src/day03.o: src/day03.cpp.o
+.PHONY : src/day03.o
+
+# target to build an object file
+src/day03.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day03.cpp.o
+.PHONY : src/day03.cpp.o
+
+src/day03.i: src/day03.cpp.i
+.PHONY : src/day03.i
+
+# target to preprocess a source file
+src/day03.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day03.cpp.i
+.PHONY : src/day03.cpp.i
+
+src/day03.s: src/day03.cpp.s
+.PHONY : src/day03.s
+
+# target to generate assembly for a file
+src/day03.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day03.cpp.s
+.PHONY : src/day03.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -294,6 +334,30 @@ tests/test_invalidCheck.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/tests/test_invalidCheck.cpp.s
 .PHONY : tests/test_invalidCheck.cpp.s
 
+tests/test_joltage.o: tests/test_joltage.cpp.o
+.PHONY : tests/test_joltage.o
+
+# target to build an object file
+tests/test_joltage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/tests/test_joltage.cpp.o
+.PHONY : tests/test_joltage.cpp.o
+
+tests/test_joltage.i: tests/test_joltage.cpp.i
+.PHONY : tests/test_joltage.i
+
+# target to preprocess a source file
+tests/test_joltage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/tests/test_joltage.cpp.i
+.PHONY : tests/test_joltage.cpp.i
+
+tests/test_joltage.s: tests/test_joltage.cpp.s
+.PHONY : tests/test_joltage.s
+
+# target to generate assembly for a file
+tests/test_joltage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/tests/test_joltage.cpp.s
+.PHONY : tests/test_joltage.cpp.s
+
 tests/test_safe.o: tests/test_safe.cpp.o
 .PHONY : tests/test_safe.o
 
@@ -329,6 +393,7 @@ help:
 	@echo "... test"
 	@echo "... aoc"
 	@echo "... test_invalidCheck"
+	@echo "... test_joltage"
 	@echo "... test_safe"
 	@echo "... src/aoc.o"
 	@echo "... src/aoc.i"
@@ -339,12 +404,18 @@ help:
 	@echo "... src/day02.o"
 	@echo "... src/day02.i"
 	@echo "... src/day02.s"
+	@echo "... src/day03.o"
+	@echo "... src/day03.i"
+	@echo "... src/day03.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... tests/test_invalidCheck.o"
 	@echo "... tests/test_invalidCheck.i"
 	@echo "... tests/test_invalidCheck.s"
+	@echo "... tests/test_joltage.o"
+	@echo "... tests/test_joltage.i"
+	@echo "... tests/test_joltage.s"
 	@echo "... tests/test_safe.o"
 	@echo "... tests/test_safe.i"
 	@echo "... tests/test_safe.s"

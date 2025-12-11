@@ -1,6 +1,7 @@
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/aoc.dir
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/test_safe.dir
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/test_invalidCheck.dir
+/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/test_joltage.dir
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/test.dir
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/edit_cache.dir
 /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles/rebuild_cache.dir
