@@ -4,7 +4,7 @@
 #include <iostream>
 
 /*
-   From a string buffer, return the max value position
+   From a string buffer, return the max value position between start and finish inclusive
 */
 int getMaxDigitBetweenPositions(const std::string& str, int start, int finish)
 {
