@@ -14,6 +14,7 @@
 struct Point {
     bool value = false;     
     int neighbors = 0; 
+    bool toBeRemoved = false;
 };
 
 class Grid {
@@ -70,6 +71,21 @@ public:
          }
       }
       return(points);
+   }
+
+   void removeFlaggedPoints()
+   {
+      for (int r=0; r<rows_; r++)
+      {
+         for (int c=0; c<cols_; c++)
+         {
+            if (data_[r * cols_ + c].toBeRemoved == true)
+            {
+               data_[r * cols_ + c].value = false;
+               data_[r * cols_ + c].toBeRemoved = false;
+            }
+         }
+      }
    }
 };
 

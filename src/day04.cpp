@@ -62,10 +62,39 @@ int day04() {
       std::cout << "Part1: " <<  accessibleRolls << "\n";
 
     // part 2
-    for (auto& line : lines) 
+   bool rollRemoved = true;
+   accessibleRolls = 0;  
+   while (rollRemoved)
+   {
+      rollRemoved = false;
+      for (int r=0; r<rows; r++)
       {
+         for (int c=0; c<cols; c++)
+         {
+            if (g.at(r,c).value)
+            {
+               std::vector<std::array<int, 2>> points;      
+               points = g.neighbours(r,c);
+               int adjacentRolls = 0;
+               for (const auto &point : points)
+               {
+                  if(g.at(point[0], point[1]).value == true)
+                  {
+                     adjacentRolls++;
+                  }
+               }   
+               if (adjacentRolls < 4)
+               {
+                  accessibleRolls++; 
+                  g.at(r, c).toBeRemoved = true;
+                  rollRemoved = true;
+               }
+            }
+         }
       }
-      std::cout << "Part2: " << "\n";
+      g.removeFlaggedPoints();
+   }
+    std::cout << "Part2: " << accessibleRolls << "\n";
 
     return 0;
 }
