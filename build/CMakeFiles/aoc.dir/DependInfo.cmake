@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/davidanderson/dev/advent/2025/aoc2025/src/day01.cpp" "CMakeFiles/aoc.dir/src/day01.cpp.o" "gcc" "CMakeFiles/aoc.dir/src/day01.cpp.o.d"
   "/Users/davidanderson/dev/advent/2025/aoc2025/src/day02.cpp" "CMakeFiles/aoc.dir/src/day02.cpp.o" "gcc" "CMakeFiles/aoc.dir/src/day02.cpp.o.d"
   "/Users/davidanderson/dev/advent/2025/aoc2025/src/day03.cpp" "CMakeFiles/aoc.dir/src/day03.cpp.o" "gcc" "CMakeFiles/aoc.dir/src/day03.cpp.o.d"
+  "/Users/davidanderson/dev/advent/2025/aoc2025/src/day04.cpp" "CMakeFiles/aoc.dir/src/day04.cpp.o" "gcc" "CMakeFiles/aoc.dir/src/day04.cpp.o.d"
   "/Users/davidanderson/dev/advent/2025/aoc2025/src/main.cpp" "CMakeFiles/aoc.dir/src/main.cpp.o" "gcc" "CMakeFiles/aoc.dir/src/main.cpp.o.d"
   )
 

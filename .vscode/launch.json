@@ -6,7 +6,7 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/aoc",
-      "args": ["3"],
+      "args": ["4"],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
       "MIMode": "lldb",

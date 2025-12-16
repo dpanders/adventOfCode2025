@@ -34,3 +34,8 @@ add_executable(test_joltage tests/test_joltage.cpp src/aoc.cpp)
 target_include_directories(test_joltage PRIVATE include)
 target_link_libraries(test_joltage GTest::GTest GTest::Main)
 add_test(NAME JoltageTests COMMAND test_joltage)
+
+add_executable(test_grid tests/test_grid.cpp src/aoc.cpp)
+target_include_directories(test_grid PRIVATE include)
+target_link_libraries(test_grid GTest::GTest GTest::Main)
+add_test(NAME GridTests COMMAND test_grid)   

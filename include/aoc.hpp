@@ -8,3 +8,4 @@ std::vector<std::string> read_lines(const std::string& path);
 int day01();
 int day02();
 int day03();
+int day04();
