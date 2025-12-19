@@ -68,6 +68,7 @@ all: CMakeFiles/test_safe.dir/all
 all: CMakeFiles/test_invalidCheck.dir/all
 all: CMakeFiles/test_joltage.dir/all
 all: CMakeFiles/test_grid.dir/all
+all: CMakeFiles/test_fresh.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -76,6 +77,7 @@ codegen: CMakeFiles/test_safe.dir/codegen
 codegen: CMakeFiles/test_invalidCheck.dir/codegen
 codegen: CMakeFiles/test_joltage.dir/codegen
 codegen: CMakeFiles/test_grid.dir/codegen
+codegen: CMakeFiles/test_fresh.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -88,6 +90,7 @@ clean: CMakeFiles/test_safe.dir/clean
 clean: CMakeFiles/test_invalidCheck.dir/clean
 clean: CMakeFiles/test_joltage.dir/clean
 clean: CMakeFiles/test_grid.dir/clean
+clean: CMakeFiles/test_fresh.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -97,12 +100,12 @@ clean: CMakeFiles/test_grid.dir/clean
 CMakeFiles/aoc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target aoc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target aoc"
 .PHONY : CMakeFiles/aoc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/aoc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/aoc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles 0
 .PHONY : CMakeFiles/aoc.dir/rule
@@ -114,7 +117,7 @@ aoc: CMakeFiles/aoc.dir/rule
 # codegen rule for target.
 CMakeFiles/aoc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target aoc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target aoc"
 .PHONY : CMakeFiles/aoc.dir/codegen
 
 # clean rule for target.
@@ -129,7 +132,7 @@ CMakeFiles/aoc.dir/clean:
 CMakeFiles/test_safe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=17,18,19,20 "Built target test_safe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=21,22,23,24 "Built target test_safe"
 .PHONY : CMakeFiles/test_safe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -146,7 +149,7 @@ test_safe: CMakeFiles/test_safe.dir/rule
 # codegen rule for target.
 CMakeFiles/test_safe.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_safe.dir/build.make CMakeFiles/test_safe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=17,18,19,20 "Finished codegen for target test_safe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=21,22,23,24 "Finished codegen for target test_safe"
 .PHONY : CMakeFiles/test_safe.dir/codegen
 
 # clean rule for target.
@@ -161,7 +164,7 @@ CMakeFiles/test_safe.dir/clean:
 CMakeFiles/test_invalidCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=11,12,13 "Built target test_invalidCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=15,16,17 "Built target test_invalidCheck"
 .PHONY : CMakeFiles/test_invalidCheck.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,7 +181,7 @@ test_invalidCheck: CMakeFiles/test_invalidCheck.dir/rule
 # codegen rule for target.
 CMakeFiles/test_invalidCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=11,12,13 "Finished codegen for target test_invalidCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=15,16,17 "Finished codegen for target test_invalidCheck"
 .PHONY : CMakeFiles/test_invalidCheck.dir/codegen
 
 # clean rule for target.
@@ -193,7 +196,7 @@ CMakeFiles/test_invalidCheck.dir/clean:
 CMakeFiles/test_joltage.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=14,15,16 "Built target test_joltage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=18,19,20 "Built target test_joltage"
 .PHONY : CMakeFiles/test_joltage.dir/all
 
 # Build rule for subdir invocation for target.
@@ -210,7 +213,7 @@ test_joltage: CMakeFiles/test_joltage.dir/rule
 # codegen rule for target.
 CMakeFiles/test_joltage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=14,15,16 "Finished codegen for target test_joltage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=18,19,20 "Finished codegen for target test_joltage"
 .PHONY : CMakeFiles/test_joltage.dir/codegen
 
 # clean rule for target.
@@ -225,7 +228,7 @@ CMakeFiles/test_joltage.dir/clean:
 CMakeFiles/test_grid.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=8,9,10 "Built target test_grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=12,13,14 "Built target test_grid"
 .PHONY : CMakeFiles/test_grid.dir/all
 
 # Build rule for subdir invocation for target.
@@ -242,13 +245,45 @@ test_grid: CMakeFiles/test_grid.dir/rule
 # codegen rule for target.
 CMakeFiles/test_grid.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=8,9,10 "Finished codegen for target test_grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=12,13,14 "Finished codegen for target test_grid"
 .PHONY : CMakeFiles/test_grid.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_grid.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/clean
 .PHONY : CMakeFiles/test_grid.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_fresh.dir
+
+# All Build rule for target.
+CMakeFiles/test_fresh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=9,10,11 "Built target test_fresh"
+.PHONY : CMakeFiles/test_fresh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_fresh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_fresh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_fresh.dir/rule
+
+# Convenience name for target.
+test_fresh: CMakeFiles/test_fresh.dir/rule
+.PHONY : test_fresh
+
+# codegen rule for target.
+CMakeFiles/test_fresh.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidanderson/dev/advent/2025/aoc2025/build/CMakeFiles --progress-num=9,10,11 "Finished codegen for target test_fresh"
+.PHONY : CMakeFiles/test_fresh.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_fresh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/clean
+.PHONY : CMakeFiles/test_fresh.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

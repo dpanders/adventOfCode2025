@@ -15,6 +15,7 @@ int main(int argc, char** argv) {
         case 2: return day02();
         case 3: return day03();
         case 4: return day04();
+        case 5: return day05();
         default:
             std::cerr << "Day " << day << " not implemented.\n";
             return 1;

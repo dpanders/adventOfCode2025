@@ -191,6 +191,19 @@ test_grid/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/build
 .PHONY : test_grid/fast
 
+#=============================================================================
+# Target rules for targets named test_fresh
+
+# Build rule for target.
+test_fresh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fresh
+.PHONY : test_fresh
+
+# fast build rule for target.
+test_fresh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/build
+.PHONY : test_fresh/fast
+
 src/aoc.o: src/aoc.cpp.o
 .PHONY : src/aoc.o
 
@@ -201,6 +214,7 @@ src/aoc.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/src/aoc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/src/aoc.cpp.o
 .PHONY : src/aoc.cpp.o
 
 src/aoc.i: src/aoc.cpp.i
@@ -213,6 +227,7 @@ src/aoc.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/src/aoc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/src/aoc.cpp.i
 .PHONY : src/aoc.cpp.i
 
 src/aoc.s: src/aoc.cpp.s
@@ -225,6 +240,7 @@ src/aoc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_invalidCheck.dir/build.make CMakeFiles/test_invalidCheck.dir/src/aoc.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_joltage.dir/build.make CMakeFiles/test_joltage.dir/src/aoc.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_grid.dir/build.make CMakeFiles/test_grid.dir/src/aoc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/src/aoc.cpp.s
 .PHONY : src/aoc.cpp.s
 
 src/day01.o: src/day01.cpp.o
@@ -326,6 +342,30 @@ src/day04.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day04.cpp.s
 .PHONY : src/day04.cpp.s
 
+src/day05.o: src/day05.cpp.o
+.PHONY : src/day05.o
+
+# target to build an object file
+src/day05.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day05.cpp.o
+.PHONY : src/day05.cpp.o
+
+src/day05.i: src/day05.cpp.i
+.PHONY : src/day05.i
+
+# target to preprocess a source file
+src/day05.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day05.cpp.i
+.PHONY : src/day05.cpp.i
+
+src/day05.s: src/day05.cpp.s
+.PHONY : src/day05.s
+
+# target to generate assembly for a file
+src/day05.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/day05.cpp.s
+.PHONY : src/day05.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -349,6 +389,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/test_fresh.o: tests/test_fresh.cpp.o
+.PHONY : tests/test_fresh.o
+
+# target to build an object file
+tests/test_fresh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/tests/test_fresh.cpp.o
+.PHONY : tests/test_fresh.cpp.o
+
+tests/test_fresh.i: tests/test_fresh.cpp.i
+.PHONY : tests/test_fresh.i
+
+# target to preprocess a source file
+tests/test_fresh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/tests/test_fresh.cpp.i
+.PHONY : tests/test_fresh.cpp.i
+
+tests/test_fresh.s: tests/test_fresh.cpp.s
+.PHONY : tests/test_fresh.s
+
+# target to generate assembly for a file
+tests/test_fresh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fresh.dir/build.make CMakeFiles/test_fresh.dir/tests/test_fresh.cpp.s
+.PHONY : tests/test_fresh.cpp.s
 
 tests/test_grid.o: tests/test_grid.cpp.o
 .PHONY : tests/test_grid.o
@@ -456,6 +520,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... aoc"
+	@echo "... test_fresh"
 	@echo "... test_grid"
 	@echo "... test_invalidCheck"
 	@echo "... test_joltage"
@@ -475,9 +540,15 @@ help:
 	@echo "... src/day04.o"
 	@echo "... src/day04.i"
 	@echo "... src/day04.s"
+	@echo "... src/day05.o"
+	@echo "... src/day05.i"
+	@echo "... src/day05.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test_fresh.o"
+	@echo "... tests/test_fresh.i"
+	@echo "... tests/test_fresh.s"
 	@echo "... tests/test_grid.o"
 	@echo "... tests/test_grid.i"
 	@echo "... tests/test_grid.s"
